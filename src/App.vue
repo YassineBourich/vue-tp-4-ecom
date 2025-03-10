@@ -1,26 +1,25 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <!--img alt="Vue logo" src="./assets/logo.png"-->
+  <Filters />
+  <Fiches />
+  <Panier />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Fiches from './components/Fiches.vue'
+import Filters from './components/Filters.vue';
+import Panier from './components/Panier.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Filters,
+    Fiches,
+    Panier
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>

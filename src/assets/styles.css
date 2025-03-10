@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+	max-width: 1200px;
+	margin: auto;
+	padding: 16px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+header {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-bottom: 16px;
+	padding: 8px;
+	background-color: #7451eb;
+	text-align: center;
+	color: white;
+}
+header img {
+	height: 60px;
+	margin-left: 1rem;
+}
+header h1 {
+	flex-grow: 1;
+}
+
+#app {
+	display: flex;
+	flex-direction: row;
+}
+
+.filtres {
+	border-radius: 4px;
+	box-shadow: 0px 0px 4px gray;
+	margin: 8px;
+	padding: 8px;
+	width: 300px;
+	min-height: 400px;
+}
+.filtres h3 {
+	text-align: center;
+}
+
+.sel {
+	margin-top: 20px;
+}
+
+.filtres select {
+	width: 100%;
+}
+
+#txtSearch {
+	width: calc(100% - 17px);
+	padding: 5px 7px;
+	font-size: 1.2em;
+}
+
+.fiches {
+	flex: 1;
+	margin: 8px;
+	overflow-y: scroll;
+	overflow-x: visible;
+}
+.fiches img {
+	width: 200px;
+	height: auto;
+}
+.fiches p {
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+
+.prod_cell {
+	display: flex;
+	height: 200px;
+	border-bottom: 1px solid gray;
+	position: relative;
+	align-items: flex-start;
+}
+
+.disponible {
+	color: green;
+}
+
+.nDisponible {
+	color: red;
+}
+
+.addBtn {
+	position: absolute;
+	right: 5px;
+	top: calc(50% - 20px);
+	color: white;
+	font-size: 1.2em;
+	background-color: #7451eb;
+	border-radius: 5px;
+	padding: 10px 15px;
+}
+
+.addBtn:hover {
+	background-color: #6243c9;
+}
+
+.addBtn:active {
+	background-color: #3c1e9c;
+}
+
+.panier {
+	border-radius: 4px;
+	box-shadow: 0px 0px 4px gray;
+	margin: 8px;
+	padding: 8px;
+	min-height: 400px;
+	width: 200px;
+	overflow-y: scroll;
+	overflow-x: visible;
+}
+
+.panier h3 {
+	text-align: center;
+}
+
+.panier img {
+	width: 100px;
+	height: auto;
+}
